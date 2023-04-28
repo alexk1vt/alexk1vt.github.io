@@ -11,5 +11,5 @@ My personal interests and hobbies (when work/school schedule permits) cover the 
   + HF digital modes
   + UHF Amateur Radio satellites
   
-Autonomous robotic spatial awareness and mobility
+- Autonomous robotic spatial awareness and mobility
 
