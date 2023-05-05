@@ -12,3 +12,5 @@ Prior research topics included:
 - Botnet agent activity detection using Linux containers (LXC)
 
 Additionally, I have also researched the viability of commercial-of-the-shelf (COTS) single-board computer (SBC) in low-earth-orbit, specifically with the Raspberry Pi 3 Compute Module.
+
+A list of my current publications can be found [here](https://alexk1vt.github.io/2023/04/26/publications.html)

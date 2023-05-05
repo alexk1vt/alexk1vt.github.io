@@ -2,6 +2,10 @@
 {% assign style = include.style | downcase | default: "apa" %}
 {% assign include_link = include.link %}
 
+{% if include.refid %}
+  {% assign refids = include.refid | split: ";" %}
+{% endif %}
+
 {% if include.venue %}
   {% assign venues = include.venue | downcase | split: ";" %}
 {% endif %}
@@ -27,6 +31,16 @@
 
 <ol>
 {% for citation in pub_list %}
+  {% if include.refid %}
+    {% if refids contains citation.RefId %}
+      {% assign is_refid = true %}
+    {% else %}
+      {% assign is_refid = false %}
+    {% endif %}
+  {% else %}
+    {% assign is_refid = true %}
+  {% endif %}
+
   {% if include.venue %}
     {% assign publication = citation.Publication | downcase %}
     {% if venues contains publication %}
@@ -154,23 +168,23 @@
     
     {% if style == "mla" %}
       <li>
-        {{ formatted_author_list | split: ";" | array_to_sentence_string }}. "{{ title_link }}." <em>{{citation.Publication}}</em> ({{citation.Year}}).
+        {{ formatted_author_list | split: ";" | array_to_sentence_string }}. "{{ title_link }}." <em>{{citation.Publication}}</em> ({{citation.Year}}). ({{citation.RefId}})
       </li>
     {% elsif style == "apa" %}  
       <li>
-        {{ formatted_author_list | split: ";" | array_to_sentence_string: "&"}} ({{citation.Year}}). {{ title_link }}. <em>{{citation.Publication}}</em>.
+        {{ formatted_author_list | split: ";" | array_to_sentence_string: "&"}} ({{citation.Year}}). {{ title_link }}. <em>{{citation.Publication}}</em>. ({{citation.RefId}})
       </li>
     {% elsif style == "chicago" %}
       <li>
-        {{ formatted_author_list | split: ";" | array_to_sentence_string }}. "{{ title_link }}." <em>{{citation.Publication}}</em> ({{citation.Year}}).
+        {{ formatted_author_list | split: ";" | array_to_sentence_string }}. "{{ title_link }}." <em>{{citation.Publication}}</em> ({{citation.Year}}). ({{citation.RefId}})
       </li>
     {% elsif style == "harvard" %}
       <li>
-        {{ formatted_author_list | split: ";" | array_to_sentence_string }}, {{citation.Year}}. {{ title_link }}. <em>{{citation.Publication}}</em>.
+        {{ formatted_author_list | split: ";" | array_to_sentence_string }}, {{citation.Year}}. {{ title_link }}. <em>{{citation.Publication}}</em>. ({{citation.RefId}})
       </li>
     {% elsif style == "vancouver" %}
       <li>
-        {{ formatted_author_list | split: ";" | join: ", " }}. {{ title_link }}. {{citation.Publication}}. {{citation.Year}}.
+        {{ formatted_author_list | split: ";" | join: ", " }}. {{ title_link }}. {{citation.Publication}}. {{citation.Year}}. ({{citation.RefId}})
       </li>
     {% endif %}
     

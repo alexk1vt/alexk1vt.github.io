@@ -1,5 +1,6 @@
-﻿Authors,Title,Publication,Volume,Number,Pages,Year,Publisher
+﻿Authors,Title,Publication,Volume,Number,Pages,Year,Publisher,RefId
 "Kedrowitsch, Alexander; Yao, Danfeng; Wang, Gang; Cameron, Kirk; ",A first look: Using linux containers for deceptive honeypots,Proceedings of the 2017 Workshop on Automated Decision Making for Active Cyber Defense,,,15-22,2017,
 "Galliand, Chalie L; Kedrowitsch, Alex L; Loucks, Diana C; ",USMA Space Cadets: The First Class,,,,,2020,
 "Kedrowitsch, Alexander Lee; ",Deceptive Environments for Cybersecurity Defense on Low-power Devices,,,,,2017,Virginia Tech
-"Coyle, Sean; Burk, Roger; Kedrowitsch, Alexander; ",EECSat: CubeSat Development,"2020 Annual General Donald R. Keith Memorial Capstone Conference. West Point, New York, USA",,,6,2020,
+"Coyle, Sean; Burk, Roger; Kedrowitsch, Alexander; ",EECSat: CubeSat Development,"2020 Annual General Donald R. Keith Memorial Capstone Conference. West Point, New York, USA",,,6,2020,ISBN: 97819384961-8-9
+"Stevo, Richard; ", Test topic, Made up imaginary conference, 1, 45, 12-854, 2020, Whereever, ISBN: 999403-4-3
