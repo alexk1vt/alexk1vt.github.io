@@ -172,7 +172,7 @@
       </li>
     {% elsif style == "apa" %}  
       <li>
-        {{ formatted_author_list | split: ";" | array_to_sentence_string: "&"}} ({{citation.Year}}). {{ title_link }}. <em>{{citation.Publication}}</em>. ({{citation.RefId}})
+        {{ formatted_author_list | split: ";" | array_to_sentence_string: "&"}} ({{citation.Year}}). {{ title_link }}. <em>{{citation.Publication}}</em>. {{citation.RefId}}
       </li>
     {% elsif style == "chicago" %}
       <li>
