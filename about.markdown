@@ -10,17 +10,20 @@ I am conducting security focused research on space-based networks.  My previous 
 
 A list of my current publications can be found [here](https://alexk1vt.github.io/2023/04/26/publications.html)
 
-
--------------------------
+<br />
+<br />
+<br />
+<br />
+-------------------------<br />
 This site was built with Jekyll using the Minima theme.
 
-You can find the source code for Minima at GitHub:
+You can find the source code for Minima here:
 [jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+[minima (github)](https://github.com/jekyll/minima)
 
-You can find the source code for Jekyll at GitHub:
+And the source code for Jekyll at here:
 [jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+[jekyll (github)](https://github.com/jekyll/jekyll)
 
 
 [jekyll-organization]: https://github.com/jekyll
