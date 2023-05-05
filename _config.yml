@@ -27,17 +27,16 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  alexk1vt
 linkedin_username: alexander-kedrowitsch-38215839
-google_scholar_username: 0YEbpFAAAAAJ&hl
 
 # Build settings
-#theme: Minima
-remote_theme: Minima
+theme: Minima
+#remote_theme: Minima
 #remote-theme: pages-themes/hacker@v0.2.0
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
-minima:
-  skin: dark
+#minima:
+#  skin: dark
 
 # Exclude from processing.
 # The following items will not be processed, by default.
